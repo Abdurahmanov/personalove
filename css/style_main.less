@@ -1,0 +1,522 @@
+
+/* Переменные */
+@pink:#ff3067;
+@line: #eee;
+@menu-color:#7b7b7b;
+@background-grey:#fbfbfb;;
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,500italic,700,700italic&subset=latin,cyrillic);
+
+.line{
+  background-color: @line;
+  height: 1px;
+  border: none;
+}
+
+/* LESS CSS */
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin: 0;
+  font-family:'Roboto', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color:@pink
+}
+
+.wrapper{
+  max-width: 1120px;
+  margin: 0 auto;
+
+  
+}
+
+header{
+  position: relative;
+  background-color: #fff;
+  height: 80px;
+  border-bottom: 1px solid #eee;
+  min-width: 1120px;
+}
+
+.header-wrapper{
+    max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.logo{
+  float: left;
+  padding-top: 22px;
+  /* padding-right: 65px; */
+  position: absolute;
+  &-img{
+    display: block;
+    width: 196px;
+    height: 28px;
+  }
+}
+
+
+.menu-top{
+  height: 80px;
+  padding-top: 30px;
+  margin-left: 261px;
+}
+
+.menu{
+  margin: 0;
+  padding: 0;
+  position: relative;
+  list-style-type: none;
+}
+
+.menu-item{
+  display: inline-block;
+  margin-right: 23px;
+  height: 50px;
+  letter-spacing: 0.3px;
+}
+
+.menu-item a {
+  text-decoration: none;
+  font-size: 16px;
+  &:hover{
+    color: #000;
+  
+  }
+
+}
+
+
+
+.active{
+  border-bottom: 2px solid @pink;
+  color: @pink;
+  
+}
+
+.menu-item.active a{
+  color:@pink;
+}
+
+.flag{
+  display: block;
+  float: right;
+  padding-top: 30px;
+}
+
+.profile{
+  position: relative;
+  float: right;
+  width: 40px;
+  height:40px;
+  top: 19px;
+  margin-right: 31px;
+  background: url(../img/photo_profile.png);
+
+    
+}
+
+.line-left{
+  display: block;
+  float: right;
+  height: 80px;
+  width:1px;
+  background-color:#eee;
+  margin-right: 28px;
+}
+
+.profile img{
+  position: absolute;
+}
+
+.count{
+    position: relative;
+  float: right;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  /* border: 1px solid #ff3067; */
+  background-color: #ff3067;
+  font-size: 11px;
+  color: #fff;
+  /* padding-left: 3px; */
+  text-align: center;
+  line-height: 15px;
+}
+
+
+section {
+    position: relative;
+  height: 100%;
+    padding-bottom: 30px;
+    min-width:1120px;
+}
+
+
+.section-inner{
+  padding: 20px 30px 10px 30px;
+  margin: 0 auto;
+}
+
+
+
+
+
+footer{
+  min-width: 1120px;
+  position: relative;
+  clear: both;
+}
+
+.footer-top{
+  background-color: #3f3f3f;
+  height: 90px;
+  line-height: 90px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 14px;
+  max-width: 1120px;
+  margin: 0 auto;
+    &-wrap{
+      background-color: #3f3f3f
+    }
+
+}
+
+.additional a{
+  margin-right: 14px;
+}
+
+.footer-top a{
+  color:#9c9c9c;
+}
+
+.social-me{
+  float: right;
+  color: #9c9c9c;
+}
+
+.socials-me{
+  width: 20px;
+  height: 15px;
+  background: url(../img/social2.png);
+  display: inline-block;
+  &-vk{
+    background-position: 0px 0px;
+    margin-left: 20px;
+  }
+
+  &-fb{
+    background-position: 45px 0;
+   
+  }
+
+  &-tw{
+    background-position: 20px 0;
+  }
+}
+
+.footer-bottom{
+  background-color: #3a3a3a;
+  height: 100%;
+  position: relative;
+  padding: 30px 30px 20px;
+  max-width: 1120px;
+  margin: 0 auto;
+    &-wrap{
+      background-color: #3a3a3a;
+    }
+    &-col{
+      width: 160px;
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 60px;
+    }
+    &-head{
+      margin-bottom: 20px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    &-head a{
+      color: #9c9c9c;
+    }
+    &-text{
+      font-size: 13px;
+      color: #7d7d7d;
+    }
+
+    &-text a{
+      color: #7d7d7d;
+      display: block;
+      margin-bottom: 15px;
+    }
+}
+
+.footer-bottom-col:first-child{
+  width:200px;
+}
+
+.footer-bottom-col:last-child{
+  width: 126px;
+  margin-right: 0;
+  float: right;
+  line-height: 20px;
+}
+
+.additional{
+  font-weight: 500
+}
+
+
+.main-banner{
+  width: 100%;
+  height: 489px;
+  background: url(../img/main-banner.jpg);
+  background-size: cover;
+  min-width: 1120px;
+  &-inner{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+  &-slogan{
+    width: 520px;
+     color: #fff;
+     display: inline-block;
+
+  }
+  
+}
+
+.slogan-head{
+    font-size: 60px;
+    font-weight: 300;
+    padding-top: 148px
+}
+
+.slogan-text{
+  font-size: 24px;
+  padding-top: 22px;
+  line-height: 32px;
+}
+
+.registration-form{
+  display: inline-block;
+  float: right;
+  margin-right: 60px;
+  margin-top: 30px;
+  width: 280px;
+}
+
+.registration-form ul{
+      display: block;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* элемент списка */
+.registration-form ul li {
+      margin:0;
+      padding:0;
+      width: 140px;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      float: left;
+  background-color: #000;
+  text-decoration: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; 
+  font-size: 16px;          
+
+}
+
+.registration-form ul .active-tabs {
+  background-color: rgba(0,0,0,0.7);
+  border: none;
+             
+       
+}
+
+.registration-form ul li a {
+    color: #afafaf;
+    width: 140px;
+    display: block;
+  }
+
+.registration-form ul .active-tabs a{
+  color: #fff;
+
+}
+
+
+/* контейнер с панелями вкладок */
+.registration-form .panes {
+      margin: 0;
+  padding: 0;
+  clear: both;
+  display: block;
+  background-color: rgba(0,0,0,0.7);
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+/* оформление вкладок */
+.registration-form .panes .tab {
+      margin:0;
+      display:block;
+      padding:20px;
+      clear:both;       
+}
+
+
+input{
+  margin-bottom: 20px;
+  width: 240px;
+  height: 40px;
+  padding: 0px 10px;
+  border-radius: 3px;
+  border: none;
+  font-size: 14px;
+  outline: 0;
+  font-family: 'Roboto';
+}
+
+
+
+
+input[type=submit]{
+  background-color: @pink;
+  color: #fff;
+  font-size: 14px;
+  padding: 0;
+  cursor: pointer;
+}
+
+input[type=submit]:hover{
+  background-color: #ce2854;
+  transition: all 0.7s ease;
+  -webkit-transition: all 0.7s ease;
+     -moz-transition: all 0.7s ease;
+     -o-transition: all 0.7s ease;
+    
+}
+
+input:last-child{
+  margin-bottom: 0;
+}
+
+// input::-webkit-calendar-picker-indicator { 
+//   background: url(../img/calendar.png) no-repeat; 
+
+// }
+
+// input::-webkit-inner-spin-button{
+//   display: none;
+// }
+
+
+.calendar-field{
+  width: 204px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.calendar-button{
+  height: 40px;
+  vertical-align: middle;
+  width: 36px;
+  /* display: inline-block; */
+  background-color: #fff;
+  border: none;
+  margin: 0;
+  /* margin-right: 0px; */
+  /* right: 2px; */
+  float: right;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  outline: 0;
+
+}
+
+.calendar-icon{
+  background: url(../img/calendar.png);
+  display: block;
+  width: 19px;
+  height: 21px;
+}
+
+
+ .content{
+  margin-top: 28px;
+  margin-bottom: 28px;
+  height: 361px;
+  &-photo-right{
+    width: 443px;
+  display: inline-block;
+  height: 361px;
+  // background: url(../img/content-photo-right.jpg);
+  }
+  &-photo-left{
+    width: 442px;
+  display: inline-block;
+  height: 350px;
+  // background: url(../img/content-photo-left.jpg);
+  }
+
+  &-text-left{
+    display: inline-block;
+  }
+  &-text-head{
+    font-size: 48px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+  &-text{
+    font-weight: 300;
+    display: inline-block;
+  }
+  &-text-description{
+    font-size: 14px;
+    width: 540px;
+    margin-bottom: 30px;
+    line-height: 19px;
+  }
+  &-button{
+    background-color: @pink;
+  width: 190px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  border-radius: 2px;
+  display: block;
+  & span{
+    color: #fff;
+  }
+  &:hover{
+    background-color: #ce2854;
+  transition: all 0.7s ease;
+  -webkit-transition: all 0.7s ease;
+     -moz-transition: all 0.7s ease;
+     -o-transition: all 0.7s ease;
+  }
+  }
+
+}
+
+.right{
+  float: right;
+}
+
+.content:last-child{
+  margin-bottom: 30px;
+}
